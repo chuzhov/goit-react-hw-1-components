@@ -1,0 +1,32 @@
+[
+  {
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998592.png",
+    "name": "Luke",
+    "isOnline": true,
+    "id": 1812
+  },
+  {
+    "avatar": "https://cdn-icons-png.flaticon.com/512/616/616438.png",
+    "name": "Darth",
+    "isOnline": true,
+    "id": 1137
+  },
+  {
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1623/1623681.png",
+    "name": "clone gHGt-h56v-hj55",
+    "isOnline": false,
+    "id": 1213
+  },
+  {
+    "avatar": "https://cdn-icons-png.flaticon.com/512/2977/2977285.png",
+    "name": "clone kjhi-uhIU-beg5-kkjy",
+    "isOnline": false,
+    "id": 1714
+  },
+  {
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998749.png",
+    "name": "Boba Fett",
+    "isOnline": false,
+    "id": 1284
+  }
+]

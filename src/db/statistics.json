@@ -1,0 +1,7 @@
+[
+    { "id": "id-1", "label": "Jedi", "percentage": 22 },
+    { "id": "id-2", "label": "Other", "percentage": 4 },
+    { "id": "id-3", "label": "Knights of Ren", "percentage": 17 },
+    { "id": "id-4", "label": "Sith", "percentage": 47 },
+    { "id": "id-5", "label": "Jedi turned Sith", "percentage": 10 }
+  ]
