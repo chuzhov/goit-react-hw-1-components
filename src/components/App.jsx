@@ -4,6 +4,8 @@ import userData from "../db/profile.json";
 import userStatistics from "../db/statistics.json";
 import friends from "../db/friends.json";
 import FriendList from "./Friends/FriendList";
+import TransactionTable from "./Transactions/TransactionTable";
+import transactions from "../db/transactions.json";
 
 export const App = () => {
   return (
@@ -19,7 +21,8 @@ export const App = () => {
     >
       <Profile user = { userData } />
       <Statistics title="Members of Sith Order" stats={userStatistics} />
-      <FriendList friends={friends} />
+      <FriendList friends={ friends } />
+      <TransactionTable transactions={ transactions } />
     </div>
   );
 };

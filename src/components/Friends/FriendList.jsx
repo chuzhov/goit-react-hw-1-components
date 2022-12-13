@@ -22,7 +22,7 @@ const FriendList = ({ friends }) => {
 FriendList.propTypes = {
     friends: PropTypes.shape({
         key: PropTypes.number.isRequired,
-        //the rest of keys are checking in FriendItem module.
+        //the rest of props are checking inside FriendItem module.
 })
 }
 
