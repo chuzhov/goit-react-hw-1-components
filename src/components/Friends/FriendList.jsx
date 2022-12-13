@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import FriendItem from "./FriendItem"
 import css from "./FriendList.module.css"
 
@@ -16,6 +17,13 @@ const FriendList = ({ friends }) => {
             </ul>
         </section>
     )
+}
+
+FriendList.propTypes = {
+    friends: PropTypes.shape({
+        key: PropTypes.number.isRequired,
+        //the rest of keys are checking in FriendItem module.
+})
 }
 
 export default FriendList;

@@ -7,7 +7,7 @@
   },
   {
     "avatar": "http://cdn.shopify.com/s/files/1/0558/2081/articles/Mitchell_DarthVader_FINAL_Square_grande_fb215384-ff63-4d31-9e9d-b41ef6fe43c9.jpg",
-    "name": "Darth",
+    "name": "Vader",
     "isOnline": true,
     "id": 1137
   },
@@ -26,7 +26,7 @@
   {
     "avatar": "https://www.sideshow.com/storage/product-images/910333/boba-fett_star-wars_square.jpg",
     "name": "Boba Fett",
-    "isOnline": false,
+    "isOnline": true,
     "id": 1284
   }
 ]
