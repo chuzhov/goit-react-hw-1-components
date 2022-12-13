@@ -33,5 +33,5 @@ tr:nth-child(even) {
     background-color: rgba(175, 173, 173, 0.2);
 }
 tr:hover {
-    outline: 1px solid salmon;
+    outline: 1px solid darkslateblue;
 }

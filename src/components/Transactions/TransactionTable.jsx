@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import TransactionRow from "./TransactionRow";
 import css from "./TransactionTable.module.css";
 
@@ -25,6 +26,10 @@ const tableInnerMarkup = transactions.map(
     </tbody>
   </table>
   )
+}
+
+TransactionTable.propTypes = {
+    transactions: PropTypes.array.isRequired,
 }
 
 export default TransactionTable;
