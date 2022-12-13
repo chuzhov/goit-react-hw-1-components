@@ -1,11 +1,13 @@
+import css from "./FriendList.module.css"
+
 const GalleryItem = ( { avatar, isOnline, name } ) => {
 
-    return <li className="item">
-        <span className="status">{isOnline}</span>
-        <div className="avatar-wrapper">
-            <img className="avatar" src={avatar} alt="User avatar"/>
+    return <li className={css["item"]}>
+        <span className={css["status"]}>{isOnline}</span>
+        <div className={css["avatar-wrapper"]}>
+            <img className={css["avatar"]} src={avatar} alt={name +" avatar"}/>
         </div>
-        <p className="name">{name}</p>
+        <p className={css["name"]}>{name}</p>
     </li>
 }
 
