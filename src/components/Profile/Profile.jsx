@@ -1,13 +1,20 @@
 import PropTypes from "prop-types";
 import css from "./Profile.module.css";
 
-const Profile = ( { user : 
-    { avatar, username, tag, location, 
-        stats : 
-        { followers, views, likes } } } ) => {
+const Profile = ( { 
+    user : {
+        avatar, 
+        username, 
+        tag, 
+        location, 
+    stats : { 
+        followers, 
+        views, 
+        likes 
+    } } } ) => {
 
-  //  const { user : { avatar, username, tag, location, stats : {followers, views, likes} } }= props;
-    console.log("Here it is, look!!!:", username);
+    console.log("Here it is >>> ", username);
+
     return ( <div className={css.profile}>
         <div className={css["description"]}>
             <div className={css["image-wrapper"]}>
