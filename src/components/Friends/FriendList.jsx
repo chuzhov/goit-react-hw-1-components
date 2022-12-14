@@ -20,10 +20,7 @@ const FriendList = ({ friends }) => {
 }
 
 FriendList.propTypes = {
-    friends: PropTypes.shape({
-        key: PropTypes.number.isRequired,
-        //the rest of props are checking inside FriendItem module.
-})
+    friends: PropTypes.array.isRequired,
 }
 
 export default FriendList;

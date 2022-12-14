@@ -1,5 +1,15 @@
-**Read in other languages: [Русский](README.md), [Polska](README.pl.md),
-[English](README.en.md), [Spanish](README.es.md).**
+This is my resolve of GO IT! React Homework #1 - React Components.
+The project created with their React homework template as is described below.
+I've made some design changes for the project to be much fun to check it.
+
+May the Force be with You!
+
+
+
+
+
+
+
 
 # React homework template
 

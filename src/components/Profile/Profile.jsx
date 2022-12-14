@@ -13,8 +13,6 @@ const Profile = ( {
         likes 
     } } } ) => {
 
-    console.log("Here it is >>> ", username);
-
     return ( <div className={css.profile}>
         <div className={css["description"]}>
             <div className={css["image-wrapper"]}>
@@ -48,11 +46,13 @@ const Profile = ( {
 }
 
 Profile.propTypes = {
+    user: PropTypes.shape({
     username: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
     avatar: PropTypes.string.isRequired, 
     location: PropTypes.string.isRequired, 
     //if a stat is represented by gaint number above one million it displays like string '1M' etc: 1Q is 1 quadrillion
+    stats: PropTypes.shape({
     followers: PropTypes.oneOfType([
         PropTypes.string,
         PropTypes.number,
@@ -64,7 +64,8 @@ Profile.propTypes = {
     likes: PropTypes.oneOfType([
         PropTypes.string,
         PropTypes.number,
-    ]).isRequired,
+    ]).isRequired,})
+})
 }
 
 export default Profile;
