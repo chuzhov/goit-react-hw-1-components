@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import StatItems from "./Stat"
+import StatItem from "./Stat"
 import css from "./Statistics.module.css";
 
 const Statistics = ( props ) => {
@@ -17,7 +17,7 @@ const Statistics = ( props ) => {
     <ul className={css["stat-list"]}>
     {
         stats.map((el) => (
-        <StatItems
+        <StatItem
           key={el.id}
           label={el.label}
           percentage={el.percentage}
@@ -31,11 +31,8 @@ const Statistics = ( props ) => {
 
 Statistics.propTypes = {
     title: PropTypes.string,
-    stats: PropTypes.shape({
-        id: PropTypes.string.isRequired,
-        label: PropTypes.string.isRequired,
-        percentage: PropTypes.number.isRequired,
-    }),
+    stats: PropTypes.array.isRequired,
 }
+
 
 export default Statistics;

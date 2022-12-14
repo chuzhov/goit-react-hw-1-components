@@ -1,13 +1,19 @@
+import PropTypes from "prop-types";
 import css from "./Statistics.module.css";
 
-const StatItems = ( props ) => {
+const StatItem = ( {label, percentage} ) => {
     
     return ( <li className={css["stat-item"]}>
-        <p className={css["stat-label"]}>{props.label}</p>
-        <p className={css["stat-percentage"]}>{props.percentage}%</p>
+        <p className={css["stat-label"]}>{label}</p>
+        <p className={css["stat-percentage"]}>{percentage}%</p>
       </li>
       
   )
 }
 
-export default StatItems;
+StatItem.propTypes = {
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+}
+
+export default StatItem;

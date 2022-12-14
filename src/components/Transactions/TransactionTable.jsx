@@ -16,9 +16,9 @@ const tableInnerMarkup = transactions.map(
     <caption className={css["table-caption"]}>The Bank of Galaxy Empire Report:</caption>
     <thead>
       <tr>
-        <th className="th-type">Type</th>
-        <th className="th-amount">Amount</th>
-        <th className="th-currency">Currency</th>
+        <th>Type</th>
+        <th>Amount</th>
+        <th>Currency</th>
       </tr>
     </thead>
     <tbody>
