@@ -6,6 +6,7 @@ import friends from "../db/friends.json";
 import FriendList from "./Friends/FriendList";
 import TransactionTable from "./Transactions/TransactionTable";
 import transactions from "../db/transactions.json";
+import Footer from "./Footer/Footer";
 
 export const App = () => {
   return (
@@ -23,6 +24,7 @@ export const App = () => {
       <Statistics title="Members of Sith Order" stats={userStatistics} />
       <FriendList friends={ friends } />
       <TransactionTable transactions={ transactions } />
+      <Footer />
     </div>
   );
 };
