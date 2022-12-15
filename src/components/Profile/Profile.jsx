@@ -1,17 +1,7 @@
 import PropTypes from "prop-types";
 import css from "./Profile.module.css";
 
-const Profile = ( { 
-    user : {
-        avatar, 
-        username, 
-        tag, 
-        location, 
-    stats : { 
-        followers, 
-        views, 
-        likes 
-    } } } ) => {
+const Profile = ( {avatar, username, tag, location, stats: {followers, views, likes}} ) => {
 
     return ( <div className={css.profile}>
         <div className={css["description"]}>
@@ -46,12 +36,11 @@ const Profile = ( {
 }
 
 Profile.propTypes = {
-    user: PropTypes.shape({
+    
     username: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
     avatar: PropTypes.string.isRequired, 
     location: PropTypes.string.isRequired, 
-    //if a stat is represented by gaint number above one million it displays like string '1M' etc: 1Q is 1 quadrillion
     stats: PropTypes.shape({
     followers: PropTypes.oneOfType([
         PropTypes.string,
@@ -65,7 +54,6 @@ Profile.propTypes = {
         PropTypes.string,
         PropTypes.number,
     ]).isRequired,})
-})
 }
 
 export default Profile;
